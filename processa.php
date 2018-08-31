@@ -4,7 +4,6 @@
     
         
         include_once("conexao.php");
-        $filtro = isset($_GET['filtro'])?$_GET['filtro']:"";
         $sql= "select * from usuarios";
         $consultas = mysqli_query ($conexao,$sql);
         $registros = mysqli_num_rows ($consultas);
