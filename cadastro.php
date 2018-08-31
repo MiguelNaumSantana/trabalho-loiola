@@ -26,14 +26,87 @@
 </div>
 <div class="form-group row">
   <label for="example-email-input" class="col-2 col-form-label">Origem</label>
+  
+  
+  
+  
+  
+  
   <div class="col-10">
-    <input class="form-control" name="origem"  id="example-email-input">
+    
+    <select name="origem" class="form-control">
+		<option value="origem">Selecione a Origem</option> 
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+</select>
+    
+    
+    
+    
+    
+    
+    
+    
   </div>
 </div>
 <div class="form-group row">
   <label for="example-url-input" class="col-2 col-form-label">Destino</label>
   <div class="col-10">
-    <input class="form-control" name="destino"  id="example-url-input">
+    <select class="form-control" name="destino">
+		<option value="destino">Selecione o Destino</option> 
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+</select>
   </div>
 </div>
 <div class="form-group row">
