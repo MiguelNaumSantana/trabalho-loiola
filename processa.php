@@ -11,7 +11,7 @@
         
         echo $registros;
     
-        if($registros <= 3){
+        if($registros <= 2){
     
             $nome = $_POST['nome'];
             $email = $_POST['email'];
