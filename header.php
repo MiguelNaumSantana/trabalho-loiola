@@ -36,6 +36,9 @@
                 <li>
                     <a href="index.php">Listar</a>
                 </li>
+                <li>
+                    <a href="pesquisar.php">Pesquisar via get</a>
+                </li>
                 
                 
             </ul>

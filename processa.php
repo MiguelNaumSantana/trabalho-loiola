@@ -4,35 +4,29 @@
     
         
         include_once("conexao.php");
-        $sql= "select * from usuarios";
-        $consultas = mysqli_query ($conexao,$sql);
-        $registros = mysqli_num_rows ($consultas);
         
+
+
+
+$id_passagem = $_POST['id_passagem'];
+
+$sql_voo= "select * from usuario_voo where id_voo =".$id_passagem;
+$consultas = mysqli_query ($conexao,$sql_voo);
+ $registros= mysqli_num_rows ($consultas);
+
+
+
+if($registros >= 3){
+    echo "Passagem esgotada";
+    
+}else{
+    $sql1 = "insert into usuario_voo(id_usuario,id_voo) values(1,$id_passagem)";
+    $salvar = mysqli_query($conexao,$sql1); 
+    header("Location: index.php");
+    
+}
+die;
         
-        echo $registros;
-    
-        if($registros <= 2){
-    
-            $nome = $_POST['nome'];
-            $email = $_POST['email'];
-            $origem = $_POST['origem'];
-            $destino = $_POST['destino'];
-            $data_ida = $_POST['data_ida'];
-            $data_volta = $_POST['data_volta'];
-            $assentos = $_POST['assentos'];
-    
-            $sql1 = "insert into usuarios(nome,email,origem,destino,data_ida,data_volta,assentos) values ('$nome','$email','$origem','$destino','$data_ida','$data_volta',$assentos)";
-    
-            $salvar = mysqli_query($conexao,$sql1); 
-            
-            
-            header("Location: cadastro.php?status=1");
-        }   
-        else{
-        
-            header("Location: cadastro.php?status=2");
-            
-        }
- 
+  
         mysqli_close ($conexao); 
 ?>

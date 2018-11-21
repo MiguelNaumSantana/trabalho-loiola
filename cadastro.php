@@ -1,7 +1,7 @@
 <?php 
     include 'header.php';
     include 'conexao.php';
-    $status = $_GET['status'];
+    
     
     echo $status;
     
@@ -10,20 +10,10 @@
 <div id="page-content-wrapper">
             <div class="container">
               
-              <h2>Cadastro de usuarios</h2>
+              <h2>Cadastro de voo</h2>
                 <form action="processa.php" method="post">
-                <div class="form-group row">
-  <label for="example-text-input" class="col-2 col-form-label">Nome</label>
-  <div class="col-10">
-    <input class="form-control" name="nome" type="text" id="example-text-input">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="example-search-input" class="col-2 col-form-label">Email</label>
-  <div class="col-10">
-    <input class="form-control" name="email" type="email"  id="example-search-input">
-  </div>
-</div>
+                
+
 <div class="form-group row">
   <label for="example-email-input" class="col-2 col-form-label">Origem</label>
   
@@ -138,18 +128,7 @@
 </div>
 </form>
 
-<?php if ($status == 1 ): ?>
-<div class="alert alert-success">
-  <strong>Successo!</strong> Usuario cadastrado com sucesso
-</div>
-<?php elseif($status == 2): ?>
 
-<div class="alert alert-danger">
-  <strong>Alerta!</strong> Número de vagas atingidas
-</div>
-
-
-<?php endif; ?>
                 
             </div>
             
