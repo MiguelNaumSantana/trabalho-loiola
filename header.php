@@ -30,9 +30,7 @@
                         Cadastro de viagens
                     </a>
                 </li>
-                <li>
-                    <a href="cadastro.php">Cadastrar</a>
-                </li>
+              
                 <li>
                     <a href="index.php">Listar</a>
                 </li>
